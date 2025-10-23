@@ -1,0 +1,20 @@
+{
+  "name": "qwizz-app",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Mobile-first, real-time 1v1 trivia game with speed-based scoring and network latency compensation.",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "devDependencies": {
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2"
+  },
+  "scripts": {
+    "lint": "npm run lint --workspaces",
+    "lint:fix": "npm run lint:fix --workspaces",
+    "format": "prettier --write \"frontend/src/**/*.{ts,html,scss}\" \"backend/src/**/*.ts\"",
+    "format:check": "prettier --check \"frontend/src/**/*.{ts,html,scss}\" \"backend/src/**/*.ts\""
+  }
+}
